@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title id="titulo">CONTACTENOS</title>
+</head>
+<body>
+    <!-- Aca comienza la cabecera de la pagina-->
+    <header id="header">
+        <div id="Logo">
+            <img src="img/LogoutuColon.png" alt="Logo principal de la utu colon" id="LogoPrincipal">
+        </div>
+        <h1 id="h1Titulo">CONTACTENOS</h1><br><br>
+        <nav class="main-nav">
+            <div id="toggle-menu" class="toggle-menu">
+                <img src="img/menu.svg" alt="menu">
+            </div>
+            <ul id="main-menu" class="main-menu">
+            <li class="main-menu__item"><img src="img/inicio.svg" alt="Boton de inicio"><a href="index.html" class="main-menu__link">Inicio</a></li>
+                <li class="main-menu__item"><img src="img/administracion.svg" alt="Boton de Administracion"><a href="administracion.html" class="main-menu__link">Administracion</a></li>
+                <li class="main-menu__item"><img src="img/adscripcion.svg" alt="Boton de Adscripcion"><a href="adscripción.html" class="main-menu__link">Adscripcion</a></li>
+                <li class="main-menu__item"><img src="img/biblioteca.svg" alt="Boton de Biblioteca"><a href="biblioteca.html" class="main-menu__link">Biblioteca</a></li>
+                <li class="main-menu__item"><img src="img/contacto.svg" alt="Boton de Contacto"><a href="contacto.html" class="main-menu__link">Contacto</a></li>
+                <li class="main-menu__item"><img src="img/acceso.svg" alt="Boton de acceso"><a href="login.php" class="main-menu__link">ACCEDER</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Aca comienza el Cuerpo principal-->
+    <main>
+        <section id="seccontacto1">
+            <h2>CONTACTO</h2><br>
+
+            <div class="container">
+                <form class="form">
+                    <h2>Formulario de Datos</h2>
+                    <p>Déjanos tus datos y te contactaremos a la brevedad.</p>
+                    <div class="input-group">
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="apellido" name="apellido" required>
+                        <label for="apellido">Apellido</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="mensaje" name="mensaje" maxlength="240" required></textarea>
+                        <label for="mensaje">Mensaje</label>
+                    </div>
+                    <button type="submit">ENVIAR</button>
+                    <div class="char-count"><span id="charCount">0</span>/240</div>
+                </form>
+            </div> <br>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13105.464372545006!2d-56.226076!3d-34.7967304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d36081b7c9b1%3A0x47a7af7a3e3885ae!2sEscuela%20Tecnica%20Col%C3%B3n!5e0!3m2!1ses-419!2suy!4v1720048467462!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <!--Aca comienza el Pie de pagina-->
+    <footer>
+        &copy; Escuela Técnica Colon - Todos los derechos reservados - 2024 <br>
+        Diseñado por <a href="#">CFM Group</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
