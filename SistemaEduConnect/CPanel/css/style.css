@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* Importa la fuente "Nunito Sans" desde Google Fonts. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+}
+
+/* Establece estilos básicos para todos los elementos: 
+   - Sin márgenes ni relleno
+   - Uso de box-sizing para incluir el relleno y el borde en el tamaño total del elemento
+   - Fuente "Nunito Sans" y tamaño de fuente de 20px
+*/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #035AA6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+/* Estilos para el encabezado:
+   - Diseño flexible (flexbox)
+   - Alineación de elementos centrada verticalmente y justificada horizontalmente
+   - Relleno de 10px arriba/abajo y 20px izquierda/derecha
+   - Fondo azul (#035AA6)
+   - Posición fija en la parte superior de la página con un filtro de desenfoque
+   - Z-index alto para mantenerlo sobre otros elementos
+*/
+#h1Titulo{
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+}
+#LogoPrincipal {
+    width: 150px;
+    height: 150px;
+}
+/* Establece el tamaño del logo principal */
+
+
+
+/* Establece tamaño para todas las imágenes */
+.imgmenu {
+    height: 50px;
+    width: 50px;
+}
+
+#imgreporte {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    height: 800px;
+
+}
+.main-menu a:hover {
+    color: #0D0D0D;
+}
+/* Cambia el color del texto de los enlaces del menú principal al pasar el ratón por encima */
+
+.toggle-menu {
+    width: 40px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    filter: invert();
+}
+/* Estilos para el botón de menú en dispositivos móviles:
+   - Ancho de 40px
+   - Posición absoluta en la parte superior derecha con un margen de 1rem
+   - Cambia el color con un filtro de inversión
+*/
+
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        display: none;
+    }
+}
+/* Oculta el botón de menú en pantallas mayores a 768px */
+
+.main-menu {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #035AA6;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden; /* Oculta el menú inicialmente */
+}
+/* Estilos para el menú principal en dispositivos móviles:
+   - Sin estilo de lista
+   - Márgenes y rellenos ajustados
+   - Diseño flexible con orientación vertical
+   - Alineación centrada y fondo azul
+   - Posición absoluta y oculto inicialmente
+   - Transición suave al mostrar el menú
+*/
+
+.main-menu--show {
+    transform: translateY(0);
+    visibility: visible; /* Muestra el menú cuando tiene la clase main-menu--show */
+}
+/* Muestra el menú principal cuando se aplica la clase main-menu--show */
+
+.main-menu__item {
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+/* Estilos para los elementos del menú principal:
+   - Relleno de 0.5em
+   - Ancho del 100%
+   - Texto centrado
+*/
+
+.main-menu__link {
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    background-color: #035AA6;
+}
+/* Estilos para los enlaces del menú principal:
+   - Color del texto blanco
+   - Texto en mayúsculas
+   - Sin subrayado
+   - Bloque con relleno de 0.5em y fondo azul
+*/
+
+.main-menu__link:hover {
+    background-color: #023E7D;
+}
+/* Cambia el color de fondo de los enlaces del menú principal al pasar el ratón por encima */
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        flex-direction: row;
+        position: static;
+        transform: none;
+        visibility: visible; /* Asegura que el menú sea visible en pantallas grandes */
+    }
+
+    .main-menu__item {
+        width: auto;
+    }
+}
+/* Estilos para el menú principal en pantallas grandes:
+   - Orientación horizontal
+   - Posición estática y visible
+   - Elementos del menú con ancho automático
+*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-image: url(img/institucion_Frente.jpg);
+}
+/* Estilos para el contenido principal:
+   - Diseño flexible con elementos que se envuelven
+   - Relleno de 20px
+   - Imagen de fondo
+*/
+
+section {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #0568a6;
+    color: #f2f2f2;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Estilos para las secciones:
+   - Flexibilidad para ajustar su tamaño
+   - Fondo azul y texto blanco
+   - Márgenes, relleno y bordes redondeados
+   - Sombra para dar efecto de profundidad
+   - Texto centrado
+*/
+
+footer {
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Estilos para el pie de página:
+   - Fondo negro y texto blanco
+   - Texto centrado
+   - Relleno de 10px
+*/
+
+@media (max-width: 720px) {
+    #header {
+        flex-direction: column;
+    }
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+    section {
+        flex: 1 1 100%; /* Ocupa el 100% del ancho en dispositivos pequeños. */
+        
+        border-radius: 50; /* Quita los bordes redondeados en dispositivos pequeños. */
+    }
+}
+/* Estilos para dispositivos pequeños:
+   - Encabezado con orientación vertical
+   - Asegura que los iframes sean responsivos y se ajusten al ancho de la pantalla
+*/

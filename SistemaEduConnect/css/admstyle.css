@@ -1,0 +1,24 @@
+#admplanilla{
+    height: 500px;
+    width: 600px;
+}
+#admhorarios{
+    height: 300px;
+    width: 300px;
+}
+#ins{
+    text-align: justify;
+}
+#admtitulo{
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+}
+
+@media (max-width: 720px) {
+    #admplanilla{
+        height: 400px;
+        width: 400px;
+        display: flex;
+    }
+}
