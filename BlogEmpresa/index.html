@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio - CFM Group</title>
+</head>
+  <body>
+    <header>
+      <img src="img/LogoPersonal.png" id="logo" alt="Un logo que hace referencia a la empresa con las siglas CFM Group dentro de un ordenador.">
+      <h1 id="h1titulo">Bienvenidos a nuestro Blog</h1>
+      <nav id="navinicio">
+        <ul>
+          <li>
+            <a href="#sec1" class="link">
+              <img src="img/inicio.svg" alt="Boton de Inicio">Inicio de Blog
+            </a>
+          </li>
+          <li>
+            <a href="#nosotros" class="link">
+              <img src="img/nosotros.svg" alt="Boton con informacion Sobre Nosotros">Sobre Nosotros
+            </a>
+          </li>
+          <li>
+            <a href="#mision" class="link">
+              <img src="img/eye-solid.svg" alt="Boton sobre nuestra Misión y Visión">Misión y Visión
+            </a>
+          </li>
+          <li>
+            <a href="#formulario" class="link">
+              <img src="img/contacto.svg" alt="Boton para formulario de Contacto">Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      
+    </header>
+    <main>
+      <section id="sec1">
+        <h2 id="h2sec1">Nuestra Empresa</h2>
+        <article>
+          <h3>CFM-Group</h3>
+          <img src="img/empresa.png" id="empresa" alt="Imagen que identifica nuestra sede central de trabajo">
+        </article>
+      </section>
+      <section id="nosotros">
+        <h2 id="h3sec2">Sobre Nosotros</h2> <br>
+        <article>
+          <h3>¡Descubre a CFM Group, tu aliado en innovación tecnológica!</h3> <br>
+          <p>
+            Aunque somos un equipo de profesionales que lanzamos nuestra pasión hace solo dos años, hemos llegado para marcar la diferencia.
+            <br>
+            Nos especializamos en Desarrollo de Software y Plataformas Web, ofreciendo soluciones innovadoras y servicios de alta calidad diseñados para satisfacer las necesidades más exigentes. <br><br>
+            Aunque somos jóvenes en el mercado, nuestro compromiso con la excelencia y la pasión por lo que hacemos nos permiten ofrecer resultados excepcionales en cada proyecto que emprendemos.
+            <br><br>
+            Estamos aquí para llevar tu empresa al siguiente nivel tecnológico. ¡Únete a CFM Group y transforma tus ideas en realidad con nosotros!
+          </p>
+          <img src="img/desa.jpg" id="desa" alt="Imagen representativa sobre tecnología y trabajo.">
+        </article>
+      </section>
+      <section id="mision">
+        <h2 id="h3sec3">Misión y Visión</h2>
+        <article>
+          <h3>Misión</h3>
+          <p>
+            Brindamos soluciones tecnológicas especializadas para la gestión
+            eficiente de inasistencias de docentes y la administración de salas
+            de informática en instituciones educativas. Nos enfocamos en
+            satisfacer las necesidades de estudiantes, docentes y personal
+            administrativo, operando dentro de la institución educativa y
+            garantizando una plataforma segura y eficiente mediante el uso de
+            tecnologías web.
+          </p>
+          <br><br>
+          <h3>Visión</h3>
+          <p>
+            Nos proyectamos como la plataforma líder en la gestión de
+            inasistencias y administración de salas de informática en
+            instituciones educativas. Nuestro objetivo es continuar mejorando y
+            expandiendo nuestras funcionalidades para adaptarnos a las
+            necesidades emergentes de las escuelas. Además, buscamos expandir
+            nuestra solución a otras instituciones educativas y establecer
+            colaboraciones con otras plataformas educativas para ofrecer
+            soluciones integradas.
+          </p>
+          <br><br>
+          <h3>Valores y Actitudes</h3>
+          <p>
+            Profesionalismo: Nos comprometemos con la excelencia y la
+            precisión en el desarrollo y mantenimiento de nuestra plataforma. <br> <br>
+            Transparencia: Mantenemos relaciones abiertas y honestas con
+            nuestros usuarios, garantizando la claridad en la gestión de
+            datos. <br> <br>
+            Compromiso: Nos esforzamos por cumplir y superar las expectativas
+            de la comunidad escolar.<br><br>
+            Innovación Continua: Estamos a la vanguardia en el desarrollo de
+            soluciones tecnológicas para la gestión escolar.<br><br>
+            Crecimiento Sostenible: Incrementamos el uso y la fidelidad de
+            nuestra plataforma dentro de la comunidad escolar.<br><br>
+            Reconocimiento en el Mercado: Somos reconocidos como una solución
+            de referencia en tecnología educativa, destacándonos por nuestras
+            soluciones integrales y personalizadas.
+          </p>
+        </article>
+      </section>
+      <div id="formulario">
+        <form action="contacto.php" method="post">
+          <h3 id="cont">Contacto</h3>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Nombre">
+
+          <label for="telefono">Número:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            required
+            placeholder="Teléfono">
+
+          <label for="correo">Correo:</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            required
+            placeholder="Correo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            cols="40"
+            placeholder="Escriba aquí su mensaje"
+          ></textarea>
+          <input type="submit" value="Enviar" id="enviarForm">
+        </form>
+      </div>
+    </main>
+    <footer>
+      &copy; CFM-Group - Todos los derechos reservados - 2024
+    </footer>
+  </body>
+</html>
